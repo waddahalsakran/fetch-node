@@ -12,7 +12,7 @@ app.get('/', async (req, res) => {
     res.writeHead(200, {'Content-Type': 'text/html'});
     fetch('https://pokeapi.co/api/v2/pokemon?limit=100&offset=2').then((api) => api.json()).then((resp) => {
         // res.render('index', {data: resp});
-        res.render('index');
+        res.render('index'); 
         
     });
 });
